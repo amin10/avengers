@@ -6,7 +6,6 @@ body {
 }
 
 #grid-container {
-	border: 3px solid black;
 	transform: translate(-50%, -50%);
 	position: absolute;
 	top: 50%;  
@@ -14,10 +13,9 @@ body {
 }
 
 #grid-container .boxes {
-	height: 300px;
-	width: 300px;
+	height: 200px;
+	width: 200px;
 	margin: 10px;
-	background: blue;
 	float: left;
 	position:relative;
 }
@@ -38,4 +36,45 @@ body {
 	float:left;
 	left:18%;
 	position:relative;
+}
+
+h1{
+	text-align: center;
+}
+#box0{
+	background: #483D8B;
+}
+
+#box1 {
+	background: #483D8B;
+	background-image: url("../images/jobs4u.png");
+}
+
+#box2 {
+	background: #483D8B;
+
+}
+
+#box3 {
+	background: #FFF333;
+}
+
+#box4 {
+	background: #483D8B;
+}
+
+#box5 {
+	background: #483D8B;
+}
+
+#box6 {
+	background: #483D8B;
+}
+
+#box7 {
+	background: #483D8B;
+}
+
+#box8 {
+	background: #483D8B;
 }
