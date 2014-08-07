@@ -14,16 +14,32 @@ body {
 }
 
 #grid-container .boxes {
+<<<<<<< HEAD
 	height: 100px;
 	width: 100px;
 	margin: 10px;
 	background: blue;
 	float: left;
+=======
+	margin: 10px;
+	position:relative;
+	height:50px;
+	width:50px;
+>>>>>>> 6c2170c04d0fccaaa1c3c247abb42e9b15f9be18
 }
 
-
 .faded {
+<<<<<<< HEAD
 	opacity: 0.33;
 	height: 50px;
 	width: 50px;
+=======
+	opacity:0.33;
+	background: red;
+}
+
+.active {
+	opacity: 1;
+	background:blue;
+>>>>>>> 6c2170c04d0fccaaa1c3c247abb42e9b15f9be18
 }
