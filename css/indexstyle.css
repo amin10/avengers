@@ -14,15 +14,18 @@ body {
 }
 
 #grid-container .boxes {
+	height: 100px;
+	width: 100px;
 	margin: 10px;
+	background: blue;
+	float: left;
 	position:relative;
-	height:50px;
-	width:50px;
 }
 
 .faded {
-	opacity:0.33;
-	background: red;
+	opacity: 0.33;
+	height: 50px;
+	width: 50px;
 }
 
 .active {
