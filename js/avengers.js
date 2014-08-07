@@ -10,14 +10,11 @@ $(function() {
     }    
 });
 
-<<<<<<< HEAD
 function make_row(x) {
     var newRow = $("<div></div>");
     newRow.attr('id', 'row' + String(x));
     newRow.addClass('rows');
 }
-=======
->>>>>>> 6c2170c04d0fccaaa1c3c247abb42e9b15f9be18
 
 function make_div(x){
     var newBox = $("<div></div>");
