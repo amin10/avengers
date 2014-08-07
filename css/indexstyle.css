@@ -1,3 +1,9 @@
+@brand-primary: #428bca;
+@brand-success: #5cb85c;
+@brand-info:    #5bc0de;
+@brand-warning: #f0ad4e;
+@brand-danger:  #d9534f;
+
 body {
 	background: url(../images/Background.png) no-repeat;
 	background-position: top left;
@@ -6,7 +12,6 @@ body {
 }
 
 #grid-container {
-	border: 3px solid black;
 	transform: translate(-50%, -50%);
 	position: absolute;
 	top: 50%;  
@@ -14,8 +19,8 @@ body {
 }
 
 #grid-container .boxes {
-	height: 300px;
-	width: 300px;
+	height: 140px;
+	width: 140px;
 	margin: 10px;
 	background: blue;
 	float: left;
@@ -38,4 +43,8 @@ body {
 	float:left;
 	left:18%;
 	position:relative;
+}
+
+#box1 {
+	background: @brand-primary;
 }
