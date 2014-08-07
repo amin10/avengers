@@ -1,15 +1,15 @@
 var box_side;
 
 $(function() {
-    for(var i = 0; i < 4; i++){
+    for(var i = 0; i < 3; i++){
         var row = make_row(i);
         for(var j = 0; j < 4; j++){
-            row.append(make_div(i*3+j))
+            row.append(make_div(i*4+j))
         }
         $("#grid-container").append(row);
     }
     box_side = $(".boxes").css('height');
-    $("#grid-container").css('width',parseInt(box_side)*5);
+    $("#grid-container").css('width',parseInt(box_side)*7);
 });
 
 function make_row(x) {
@@ -20,7 +20,8 @@ function make_row(x) {
 }
 
 function make_div(x){
-    var url = ['jobs4u','atl','http','howtocrisis','voteseeker','hzone','somethinggood','crowdalertssystem','kikrisis','watchout','helpmeout','eventor'];
+    var names = ['jobs4u','atl','http','howtocrisis','voteseeker','hzone','somethinggood','crowdalertssystem','kikrisis','watchout','helpmeout','eventor'];
+
     var newBox = $("<div></div>");
     newBox.attr('id', 'box'+String(x));
     newBox.addClass('boxes').addClass('faded').addClass('img-circle');
@@ -36,7 +37,7 @@ function make_div(x){
     });
     var link = $("<a></a>");
     link.attr('id', 'link'+String(x));
-    link.attr('href', 'http://meet-projects.github.io/'+url[x]+'-y2-2014');
+    link.attr('href', 'http://meet-projects.github.io/'+names[x]+'-y2-2014');
     link.append(newBox);
     return link;
 }
