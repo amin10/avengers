@@ -4,16 +4,20 @@ $(function(){
     }    
 });
 
+
 function make_div(x){
     var newBox = $("<div></div>");
     newBox.attr('id', 'box'+String(x));
-    newBox.addClass('boxes');
+    newBox.addClass('boxes').addClass('faded')
     newBox.hover(function(){
-        $(this).css("height","200%").css("width", "200%").removeClass('faded');
-        $(".active").removeClass('.active');
-        $(this).addClass('active');
-        $(".boxes:not(.active)").addClass('faded'); 
-        $(this).fadeIn()
+        //$(".active").removeClass('active');
+        $(this).removeClass('faded').addClass('active');
+        //$(".boxes:not(.active)").addClass('faded'); 
+        $(this).animate({width:'+=400px', height:'+=400px'}, 200)
+    },function(){
+        $(this).removeClass('active').addClass('faded');
+        $(this).animate({width:'-=400px', height:'-=400px'}, 200)
     });
     return newBox;
 }
+
