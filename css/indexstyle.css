@@ -31,4 +31,5 @@ body {
 }
 #box0, #box1, #box3, #box4, #box6, #box7 {
 	float: left;
+	clear:both;
 }
