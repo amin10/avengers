@@ -14,18 +14,16 @@ body {
 }
 
 #grid-container .boxes {
-	height: 300px;
-	width: 300px;
+	height: 100px;
+	width: 100px;
 	margin: 10px;
 	background: blue;
+	float: left;
 }
 
 
 .faded {
 	opacity: 0.33;
-	height:50px;
-	width:50px;
-}
-#box0, #box1, #box3, #box4, #box6, #box7 {
-	float: left;
+	height: 50px;
+	width: 50px;
 }
