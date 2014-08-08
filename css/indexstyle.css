@@ -22,7 +22,6 @@ body {
 	height: 140px;
 	width: 140px;
 	margin: 10px;
-	background: blue;
 	float: left;
 	position:relative;
 }
@@ -45,6 +44,79 @@ body {
 	position:relative;
 }
 
+<<<<<<< HEAD
 #box1 {
 	background: @brand-primary;
 }
+=======
+h1{
+	text-align: center;
+}
+#box0{
+	background: #483D8B;
+	background-image: url("../images/jobs4u.png");
+
+}
+
+#box1 {
+	background: #483D8B;
+	background-image: url("../images/atl.png");
+}
+
+#box2 {
+	background: #483D8B;
+	background-image: url("../images/http.png");
+}
+
+#box3 {
+	background: #FFF333;
+	background-image: url("../images/howtocrisis.png");
+
+}
+
+#box4 {
+	background: #483D8B;
+	background-image: url("../images/voteseeker.jpeg");
+
+}
+
+#box5 {
+	background: #483D8B;
+	background-image: url("../images/hzone.png");
+
+}
+
+#box6 {
+	background: #483D8B;
+	background-image: url("../images/somethinggood.png");
+
+}
+
+#box7 {
+	background: #483D8B;
+	background-image: url("../images/crowdalertsystem.png");
+
+}
+
+#box8 {
+	background: #483D8B;
+	background-image: url("../images/kikrisis.png");
+}
+
+#box9 {
+	background: #483D8B;
+	background-image: url("../images/watchout.gif");
+
+}
+#box10 {
+	background: #483D8B;
+	background-image: url("../images/helpmeout.jpeg");
+
+}
+#box11 {
+	background: #483D8B;
+	background-image: url("../images/eventor.png");
+
+}
+
+>>>>>>> 4c11c84e763ba668fa919275574edb864503e8bd
