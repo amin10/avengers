@@ -1,8 +1,3 @@
-@brand-primary: #428bca;
-@brand-success: #5cb85c;
-@brand-info:    #5bc0de;
-@brand-warning: #f0ad4e;
-@brand-danger:  #d9534f;
 
 body {
 	background: url(../images/Background.png) no-repeat;
@@ -44,11 +39,6 @@ body {
 	position:relative;
 }
 
-<<<<<<< HEAD
-#box1 {
-	background: @brand-primary;
-}
-=======
 h1{
 	text-align: center;
 }
@@ -118,5 +108,3 @@ h1{
 	background-image: url("../images/eventor.png");
 
 }
-
->>>>>>> 4c11c84e763ba668fa919275574edb864503e8bd
