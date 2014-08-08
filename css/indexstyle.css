@@ -18,17 +18,12 @@ h1 {
 
 #grid-container {
 	position: absolute;
-	top: 50%;  
+	top: 200px;  
 	left: 50%;
 	width: 720px;
 	margin: 0 auto 3em;
+	margin-left: -360px;
 	text-align: center;
-
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-wenkit-transform: translate(-50%, -50%);
-	-o-transform: translate(-50%, -50%);
 }
 
 .rows {
