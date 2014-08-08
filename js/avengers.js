@@ -1,5 +1,3 @@
-var box_side;
-
 $(function() {
     for(var i = 0; i < 3; i++){
         var row = make_row(i);
@@ -8,8 +6,6 @@ $(function() {
         }
         $("#grid-container").append(row);
     }
-    box_side = $(".boxes").css('height');
-    $("#grid-container").css('width',parseInt(box_side)*7);
 });
 
 function make_row(x) {
@@ -19,26 +15,29 @@ function make_row(x) {
     return newRow;
 }
 
-function make_div(x){
-    var names = ['jobs4u','atl','http','howtocrisis','voteseeker','hzone','somethinggood','crowdalertssystem','kikrisis','watchout','helpmeout','eventor'];
+var names = ['jobs4u','atl','http','howtocrisis','voteseeker','hzone','somethinggood','crowdalertssystem','kikrisis','watchout','helpmeout','eventor'];
+var namesArr = ['Jobs4U','ATL','HTTP','How to crisis','Voteseeker','Hzone','Something good','Crowd alerts system','Kikrisis','Watchout','Helpmeout','Eventor'];
+var imagesArr = ["images/jobs4u.png", "images/atl.png", "images/http.png", "images/howtocrisis.png", "images/voteseeker.jpeg", "images/hzone.png", "images/somethinggood.png", 
+"images/crowdalertsystem.png", "images/kikrisis.png", "images/watchout.gif", "images/helpmeout.jpeg", "images/eventor.png"];
 
-    var newBox = $("<div></div>");
+function make_div(x){
+
+    var newBox = $("<div class = 'boxes'></div>");
     newBox.attr('id', 'box'+String(x));
-    newBox.addClass('boxes').addClass('faded').addClass('img-circle');
-    newBox.hover(function(){
-        //$(".active").removeClass('active');
-        $(this).removeClass('faded').addClass('active');
-        //$(".boxes:not(.active)").addClass('faded'); 
-        $(this).animate({width:'+=400px', height:'+=400px'}, 1500)
-    },function(){
-        $(this).stop()
-        $(this).removeClass('active').addClass('faded');
-        $(this).animate({width: box_side, height:box_side}, 0)
-    });
-    var link = $("<a></a>");
+    newBox.attr('target', '_blank');
+    newBox.append("<div class = 'outer1 circle'></div>");
+    newBox.append("<div class = 'outer2 circle'></div>");
+
+    var newFigure = $("<figure></figure>")
+    newFigure.append("<img src = '" + imagesArr[x] + "' />");
+    newFigure.append("<figcaption class = 'caption'>" + namesArr[x] +"</figcaption>");
+    newBox.append(newFigure);
+
+    var link = $("<a class = 'links' target = '_blank'></a>");
     link.attr('id', 'link'+String(x));
     link.attr('href', 'http://meet-projects.github.io/'+names[x]+'-y2-2014');
     link.append(newBox);
+
     return link;
 }
 
