@@ -15,8 +15,8 @@ function make_row(x) {
     return newRow;
 }
 
-var names = ['jobs4u','atl','http','howtocrisis','voteseeker','hzone','somethinggood','crowdalertssystem','kikrisis','watchout','helpmeout','eventor'];
-var namesArr = ['Jobs4U','ATL','HTTP','How to crisis','Voteseeker','Hzone','Something good','Crowd alerts system','Kikrisis','Watchout','Helpmeout','Eventor'];
+var names = ['jobs4u','atl','http','howtocrisis','voteseeker','hzone','somethinggood','crowdalertsystem','kikrisis','watchout','helpmeout','eventor'];
+var namesArr = ['Jobs4U','ATL','HTTP','How to crisis','Voteseeker','Hzone','Something good','Crowd Alert System','Kikrisis','Watchout','Helpmeout','Eventor'];
 var imagesArr = ["images/jobs4u.png", "images/atl.png", "images/http.png", "images/howtocrisis.png", "images/voteseeker.jpeg", "images/hzone.png", "images/somethinggood.png", 
 "images/crowdalertsystem.png", "images/kikrisis.png", "images/watchout.gif", "images/helpmeout.jpeg", "images/eventor.png"];
 
